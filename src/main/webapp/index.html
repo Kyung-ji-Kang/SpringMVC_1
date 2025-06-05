@@ -1,12 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>서블릿 MVC 학습</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .main-category {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-weight: bold;
+            color: #495057;
+        }
+        .sub-category {
+            padding-left: 20px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .version-tag {
+            background-color: #28a745;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-left: 5px;
+        }
+    </style>
 </head>
 <body>
-<ul>
-    <li><a href="basic.html">서블릿 basic</a></li>
-</ul>
+<div class="container">
+    <h1>🚀 서블릿 MVC 학습 인덱스</h1>
+
+    <ul>
+        <li class="main-category">
+            📚 기본 학습
+            <ul class="sub-category">
+                <li><a href="basic.html">서블릿 basic</a></li>
+            </ul>
+        </li>
+
+        <li class="main-category">
+            🔧 서블릿
+            <ul class="sub-category">
+                <li><a href="/servlet/members/new-form">회원가입</a></li>
+                <li><a href="/servlet/members">회원목록</a></li>
+            </ul>
+        </li>
+
+        <li class="main-category">
+            📄 JSP
+            <ul class="sub-category">
+                <li><a href="/jsp/members/new-form.jsp">회원가입</a></li>
+                <li><a href="/jsp/members.jsp">회원목록</a></li>
+            </ul>
+        </li>
+
+        <li class="main-category">
+            🎯 서블릿 MVC
+            <ul class="sub-category">
+                <li><a href="/servlet-mvc/members/new-form">회원가입</a></li>
+                <li><a href="/servlet-mvc/members">회원목록</a></li>
+            </ul>
+        </li>
+
+        <li class="main-category">
+            🎮 FrontController <span class="version-tag">v1</span>
+            <ul class="sub-category">
+                <li><a href="/front-controller/v1/members/new-form">회원가입</a></li>
+                <li><a href="/front-controller/v1/members">회원목록</a></li>
+            </ul>
+        </li>
+
+        <li class="main-category">
+            🎮 FrontController <span class="version-tag">v2</span>
+            <ul class="sub-category">
+                <li><a href="/front-controller/v2/members/new-form">회원가입</a></li>
+                <li><a href="/front-controller/v2/members">회원목록</a></li>
+            </ul>
+        </li>
+
+        <li class="main-category">
+            🎮 FrontController <span class="version-tag">v3</span>
+            <ul class="sub-category">
+                <li><a href="/front-controller/v3/members/new-form">회원가입</a></li>
+                <li><a href="/front-controller/v3/members">회원목록</a></li>
+            </ul>
+        </li>
+
+        <li class="main-category">
+            🎮 FrontController <span class="version-tag">v4</span>
+            <ul class="sub-category">
+                <li><a href="/front-controller/v4/members/new-form">회원가입</a></li>
+                <li><a href="/front-controller/v4/members">회원목록</a></li>
+            </ul>
+        </li>
+
+        <li class="main-category">
+            🎮 FrontController <span class="version-tag">v5</span> - v3 어댑터
+            <ul class="sub-category">
+                <li><a href="/front-controller/v5/v3/members/new-form">회원가입</a></li>
+                <li><a href="/front-controller/v5/v3/members">회원목록</a></li>
+            </ul>
+        </li>
+
+        <li class="main-category">
+            🎮 FrontController <span class="version-tag">v5</span> - v4 어댑터
+            <ul class="sub-category">
+                <li><a href="/front-controller/v5/v4/members/new-form">회원가입</a></li>
+                <li><a href="/front-controller/v5/v4/members">회원목록</a></li>
+            </ul>
+        </li>
+
+        <li class="main-category">
+            🌱 SpringMVC <span class="version-tag">v1</span>
+            <ul class="sub-category">
+                <li><a href="/springmvc/v1/members/new-form">회원가입</a></li>
+                <li><a href="/springmvc/v1/members">회원목록</a></li>
+            </ul>
+        </li>
+
+        <li class="main-category">
+            🌱 SpringMVC <span class="version-tag">v2</span>
+            <ul class="sub-category">
+                <li><a href="/springmvc/v2/members/new-form">회원가입</a></li>
+                <li><a href="/springmvc/v2/members">회원목록</a></li>
+            </ul>
+        </li>
+
+        <li class="main-category">
+            🌱 SpringMVC <span class="version-tag">v3</span>
+            <ul class="sub-category">
+                <li><a href="/springmvc/v3/members/new-form">회원가입</a></li>
+                <li><a href="/springmvc/v3/members">회원목록</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
 </body>
 </html>
