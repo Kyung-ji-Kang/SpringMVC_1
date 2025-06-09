@@ -45,8 +45,15 @@ public class FrontControllerServletV3 extends HttpServlet
         //paramMap
         Map<String, String> paramMap = createParamMap(request);
         ModelView mv = controller.process(paramMap);
-        mv.getViewName(); //논리 이름 new - form
 
+        String viewName = mv.getViewName();//논리 이름 new - form
+        MyView view = viewResolver(viewName);
+
+        view.render(mv.getModel(),request,response);
+    }
+
+    private static MyView viewResolver(String viewName) {
+        return new MyView("/WEB-INF/views/" + viewName + ".jsp");
     }
 
     private static Map<String, String> createParamMap(HttpServletRequest request) {
