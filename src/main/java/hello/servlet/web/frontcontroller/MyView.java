@@ -30,4 +30,7 @@ public class MyView {
     private static void modelToRequestAttribute(Map<String, Object> model, HttpServletRequest request) {
         model.forEach((key, value)-> request.setAttribute(key,value));
     }
+
+
+
 }
